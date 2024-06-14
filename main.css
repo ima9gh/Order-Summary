@@ -52,7 +52,7 @@ body{
 
 .card h1{
     color: var(--clrH1);
-    font-family: RedHatDisplay-Bold;
+    font-family: RedHatDisplay-Black;
     font-size: 1.75em;
     margin: 45px 0 0px 0;
 }
