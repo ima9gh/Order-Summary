@@ -1,0 +1,165 @@
+@font-face {
+    font-family: RedHatDisplay-Black;
+    src: url(static/RedHatDisplay-Black.ttf);
+}
+@font-face {
+    font-family: RedHatDisplay-Bold;
+    src: url(static/RedHatDisplay-Bold.ttf);
+}
+@font-face {
+    font-family: RedHatDisplay-Medium;
+    src: url(static/RedHatDisplay-Medium.ttf);
+}
+
+body{
+    background: url(images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    font-family: RedHatDisplay-Medium;
+    background-color: var(--clrBG);
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 100%;
+    height: 900px;
+    margin: 0;
+}
+
+:root{
+    --clrBG: hsl(225, 100%, 94%);
+    --clrBG-btn: hsl(245, 75%, 52%);
+    --clrBG-plan: hsl(225, 100%, 98%);
+    --clrCaption: hsl(224, 23%, 55%);
+    --clrH1: hsl(223, 47%, 23%);
+}
+
+.card{
+    width: 450px;
+    height: 700px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.card img{
+    border-radius: 20px 20px 0 0;
+}
+
+.card h1{
+    color: var(--clrH1);
+    font-family: RedHatDisplay-Bold;
+    font-size: 1.75em;
+    margin: 45px 0 0px 0;
+}
+
+.card .caption{
+    color: var(--clrCaption);
+    line-height: 1.6em;
+    font-size: 1.02em;
+}
+
+.card .annual-plan{
+    background-color: var(--clrBG-plan);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    height: 100px;
+    width: 80%;
+    margin: 5px 0 30px 0;
+}
+
+.card .annual-plan p{
+    font-family: RedHatDisplay-Black;
+    position: relative;
+    right: 35px;
+    color: var(--clrH1);
+    line-height: 1.7em;
+}
+
+.card .annual-plan p span{
+    font-family: RedHatDisplay-Medium;
+    color: var(--clrCaption);
+}
+
+.card .annual-plan ins{
+    font-family: RedHatDisplay-Bold;
+    color: var(--clrBG-btn);
+    font-size: .9em;
+}
+
+.card button{
+    background-color: var(--clrBG-btn);
+    color: white;
+    border-radius: 10px;
+    font-size: .95em;
+    padding: 15px 0px 15px 0px;
+    border: none;
+    width: 80%;
+    font-family: RedHatDisplay-Bold;
+    box-shadow: 0 10px 30px hsl(245, 75%, 82%);
+}
+
+.card .cancel{
+    font-family: RedHatDisplay-Black;
+    color: var(--clrCaption);
+    margin-top: 35px;
+    font-size: .95em;
+}
+
+@media screen and (max-width: 500px){
+    body{
+        background: url(images/pattern-background-mobile.svg);
+    }
+    
+    .card{
+        width: 300px;
+        height: 500px;
+    }
+
+    .card img{
+        width: 300px;
+    }
+
+    .card h1{
+        font-size: 1.3em;
+        margin: 30px 0 0px 0;
+    }
+    
+    .card .caption{
+        font-size: .8em;
+    }
+    
+    .card .annual-plan p{
+        right: 15px;
+        font-size: .7em;
+    }
+
+    .card .annual-plan img{
+       width: 40px;
+    }
+
+    .card .annual-plan ins{
+        font-size: .7em;
+    }
+
+    .card .annual-plan{
+        height: 70px;
+        margin: 5px 0 20px 0;
+    }
+
+    .card button{
+        font-size: .75em;
+        padding: 10px 0px 10px 0px;
+    }
+    
+    .card .cancel{
+        margin-top: 25px;
+        font-size: .75em;
+    }
+}
