@@ -115,6 +115,8 @@ body{
 @media screen and (max-width: 500px){
     body{
         background: url(images/pattern-background-mobile.svg);
+        background-repeat: repeat-x;
+        background-color: var(--clrBG);
     }
     
     .card{
