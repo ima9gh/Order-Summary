@@ -44,6 +44,7 @@ body{
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
+    box-shadow: 0 30px 25px #cbd5f9;
 }
 
 .card img{
@@ -87,10 +88,11 @@ body{
     color: var(--clrCaption);
 }
 
-.card .annual-plan ins{
+.card .annual-plan a{
     font-family: RedHatDisplay-Bold;
     color: var(--clrBG-btn);
     font-size: .9em;
+    cursor: pointer;
 }
 
 .card button{
@@ -103,6 +105,7 @@ body{
     width: 80%;
     font-family: RedHatDisplay-Bold;
     box-shadow: 0 10px 30px hsl(245, 75%, 82%);
+    cursor: pointer;
 }
 
 .card .cancel{
@@ -110,6 +113,20 @@ body{
     color: var(--clrCaption);
     margin-top: 35px;
     font-size: .95em;
+    cursor: pointer;
+}
+
+.card .annual-plan a:hover{
+    color: #766cf1;
+    text-decoration: none;
+}
+
+.card button:hover{
+    background-color: #766cf1;
+}
+
+.card .cancel:hover{
+    color: var(--clrH1);
 }
 
 @media screen and (max-width: 500px){
