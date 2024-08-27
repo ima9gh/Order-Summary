@@ -116,7 +116,7 @@ body{
     cursor: pointer;
 }
 
-.card .annual-plan a:hover{
+.card .annual-plan ins:hover{
     color: #766cf1;
     text-decoration: none;
 }
